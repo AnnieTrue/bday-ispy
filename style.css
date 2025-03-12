@@ -5,6 +5,7 @@ body{
 	/*actually do a repeating pattern of my doodle drawings maybe*/
 	background-image: url("images/cakes.png");
   	background-repeat: repeat;
+  	background-attachment: fixed;
   	display: flex;
   	flex-direction: column;
   	align-items: center;
