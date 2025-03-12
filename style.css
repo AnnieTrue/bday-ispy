@@ -109,7 +109,7 @@ ul{
 li{
 	margin-left: -5vw;
 	display: flex;
-	background-color: rgba(255, 226, 236, .75);
+	background-color: rgba(255, 38, 97, .5);
 	border-radius: 5pt;
 	padding: 2vw;
 	width:100%;
@@ -137,5 +137,6 @@ button:active {
 }
 
 .count{
-	  color: #FF2661;
+/*	  color: #FF2661;*/
+		color: rgba(16, 119, 65, 1);
 }
