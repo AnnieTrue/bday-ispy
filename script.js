@@ -29,9 +29,9 @@ function startGameScreen(){
 
 form.addEventListener('submit', function(event) {
 	event.preventDefault(); // Prevent default form submission
-	alert("test")
-	console.log("FUNCTION")
 	name = document.getElementById("name").value
 	localStorage["name"] = name
 	startGameScreen()
 });
+
+
