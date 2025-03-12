@@ -134,10 +134,13 @@ li{
 
 }
 button{
+	width: 7vw;
+	height: 7vw;
 	background-color: #FFBA91;
 	border: none;
 	border-radius: 3pt;
 	color: #FF63A2;
+	padding-bottom: 10vw; /*?????????/*/
 /*	color: #FF2661;*/
 	font-size: 7vw;
 	box-shadow: -1vw 1vw 0vw #FB8D64;
