@@ -58,11 +58,16 @@ function addListItem(item, list, pointsList, contentList, pointValue){
 	minus.textContent = "-"
 	const index = contentList.indexOf(item) // used in both lists, to get the text from contentList, the current count from pointsList, and the li
 
+	const text = document.createElement('div')
+
 
 	// put buttons, count, text in list item
-	li.appendChild(minus)
+	// li.appendChild(minus)
 	//the count for each item has id: index_number+"count"+point_value
-	li.innerHTML += " <span id='"+index+"count"+pointValue+"' class='count'>"+pointsList[index]+"</span> <div class='findMe'>"+item+"</div> "
+	text.innerHTML += "\n <span id='"+index+"count"+pointValue+"' class='count'>"+pointsList[index]+"</span> <div class='findMe'>"+item+"</div> "
+	
+	li.appendChild(minus)
+	li.appendChild(text)
 	li.appendChild(plus)
 
 
@@ -71,6 +76,15 @@ function addListItem(item, list, pointsList, contentList, pointValue){
 
 
   	//button functionality
+  	minus.addEventListener('click', function() {
+		// alert("MINUS")
+		pointsList[index] = pointsList[index] - pointValue
+  		document.getElementById(index+"count"+pointValue).textContent = pointsList[index]
+  		// console.log(pointsList)
+  		points = points - pointValue
+  		pointsDisplay.textContent = points
+	})
+ 
 	plus.addEventListener('click', function() {
 		pointsList[index] = pointsList[index] + pointValue
   		document.getElementById(index+"count"+pointValue).textContent = pointsList[index]
@@ -79,14 +93,7 @@ function addListItem(item, list, pointsList, contentList, pointValue){
   		pointsDisplay.textContent = points
 	}) 
 
-	minus.addEventListener('click', function() {
-		console.log("MINUS")
-		pointsList[index] = pointsList[index] - pointValue
-  		document.getElementById(index+"count"+pointValue).textContent = pointsList[index]
-  		console.log(pointsList)
-  		points = points - pointValue
-  		pointsDisplay.textContent = points
-	}) 
+ 
 }
 
 function writeList(){

@@ -101,7 +101,7 @@ h1{
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 	text-align: center;
-	font-size: 7vw;
+	font-size: 6vw;
 }
 #GameScreen > div{
 	color: #FFE3EB;
@@ -123,7 +123,7 @@ ul{
 li{
 	margin-left: -5vw;
 	display: flex;
-	background-color: rgba(255, 38, 97, .5);
+	background-color: rgba(255, 38, 97, .35);
 	border-radius: 5pt;
 	padding: 2vw;
 	width:100%;
@@ -137,8 +137,8 @@ button{
 	background-color: #FFBA91;
 	border: none;
 	border-radius: 3pt;
-/*	color: #FF63A2;*/
-	color: #FF2661;
+	color: #FF63A2;
+/*	color: #FF2661;*/
 	font-size: 7vw;
 	box-shadow: -1vw 1vw 0vw #FB8D64;
 	font-family: "Lexend", sans-serif;
@@ -162,9 +162,18 @@ button:active {
 }
 
 #whisper{
-	font-size: 5vw;
+	font-size: 4vw;
 }
 
 .findMe{
 	text-align: left;
+	margin-left: 3vw;
+}
+
+li > div{
+	display: flex;
+/*	background-color: orange;*/
+	justify-content: left;
+	align-items: center;
+	width: 100%;
 }
