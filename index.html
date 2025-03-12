@@ -2,13 +2,14 @@
 <title>Annie's 30th Birthday</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="images/small_bird.png">
+
 </head>
 <body>
 
 
 	<div id="NameScreen" style="display:none">
 		<h1>Annie's 30th Birthday iSpy!!!</h1>
-		<form>
+		<form id="nameForm">
 			<label for="name">enter your name:</label><br>
   			<input type="text" id="name" name="name" value=""><br>
   			<input id="submitName" type="submit" value="start">
@@ -17,6 +18,7 @@
 
 	<div id="GameScreen" style="display:none">
 		<h1>Annie's 30th Birthday iSpy!!!</h1>
+		<h2><span id="player"></span>'s Points: <span id="points"></span></h2>
 
 	<div>1pt per sighting:</div>
 	<ul>
