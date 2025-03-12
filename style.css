@@ -81,9 +81,61 @@ h1{
 	background-color:rgba(255, 153, 191, 0.75);
 	border-radius: 3pt;
 	width: 75vw;
-  	flex-direction: column;
-  	align-items: center;
-  	padding: 2vw;
-  	margin-top: 5vh;
-  	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 2vw;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	text-align: center;
+	font-size: 7vw;
+}
+#GameScreen > div{
+	color: #FFE3EB;
+	font-size: 7vw;
+	background-color: rgba(16, 119, 65, 1);
+	border-radius: 5pt;
+	padding: 1vw;
+	width: 75%;
+}
+
+ul{
+/*	background-color: orange;*/
+	list-style: none;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	gap:5vh;
+}
+li{
+	margin-left: -5vw;
+	display: flex;
+	background-color: rgba(255, 226, 236, .75);
+	border-radius: 5pt;
+	padding: 2vw;
+	width:100%;
+	justify-content: space-between;
+	align-items: center;
+	gap:2vw;
+	text-align: left;
+
+}
+button{
+	background-color: #FFBA91;
+	border: none;
+	border-radius: 3pt;
+	color: #FF63A2;
+	font-size: 7vw;
+	box-shadow: -1vw 1vw 0vw #FB8D64;
+}
+button:hover{
+	background-color: #FB8D64;
+	color: #FFBA91;
+	box-shadow: -1vw 1vw 0vw #FF63A2;
+}
+button:active {
+  transform: translateY(4px);
+}
+
+.count{
+	  color: #FF2661;
 }
