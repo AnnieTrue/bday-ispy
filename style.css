@@ -137,14 +137,20 @@ button{
 	background-color: #FFBA91;
 	border: none;
 	border-radius: 3pt;
-	color: #FF63A2;
+/*	color: #FF63A2;*/
+	color: #FF2661;
 	font-size: 7vw;
 	box-shadow: -1vw 1vw 0vw #FB8D64;
+	font-family: "Lexend", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
 }
 button:hover{
 	background-color: #FB8D64;
 	color: #FFBA91;
-	box-shadow: -1vw 1vw 0vw #FF63A2;
+/*	box-shadow: -1vw 1vw 0vw #FF63A2;*/
+	box-shadow: -1vw 1vw 0vw #FF2661;
 }
 button:active {
   transform: translateY(4px);
@@ -153,4 +159,12 @@ button:active {
 .count{
 /*	  color: #FF2661;*/
 		color: rgba(16, 119, 65, 1);
+}
+
+#whisper{
+	font-size: 5vw;
+}
+
+.findMe{
+	text-align: left;
 }

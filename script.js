@@ -6,9 +6,9 @@ var points = 0
 var name = ""
 
 
-const things1 = ['scupltures (statuettes 3pts)', 'someone feeding birds', 'Mood Fabrics shopping bag', 'birds in art', 'spiders', 'witches', 'vampires', 'ants', 'Harry Potter (Mauraders 3pts)', 'murals (wing murals 3pts)', 'someone running in non-athletic clothing', 'someone in facepaint', 'pretty cakes (classically frosted 3pts)', 'obvious siblings', 'doll houses', 'miniatures', 'pink curtains', 'dandelions', 'an adult eating a sweet treat alone', 'leaves lit only by artificial light', 'pigeons', 'American Girl Doll', 'historical plaques', 'spiral staircases', 'Taylor Swift', 'Chappell Roan', 'Lost', 'stained glass', 'rainbow sprinkles', 'dogs (in clothes 3pts)', 'the number 3', 'the name Annie', 'Powerpuff Girls', 'cemeteries', 'someone making art', 'someone carrying something out of place or cumbersome', 'bench with a plaque (must read)', 'anything birthday related', 'psychics', 'Wizard of Oz', 'art on the ground', 'libraries', 'museums']
+const things1 = ['scupltures<br><span id="whisper">(statuettes 3pts)</span>', 'someone feeding birds', 'Mood Fabrics shopping bag', 'birds in art', 'spiders', 'witches', 'vampires', 'ants', 'Harry Potter<br><span id="whisper">(Mauraders 3pts)</span>', 'murals<br><span id="whisper">(wing murals 3pts)</span>', 'someone running in non-athletic clothing', 'someone in facepaint', 'pretty cakes<br><span id="whisper">(classically frosted 3pts)</span>', 'obvious siblings', 'miniatures', 'pink curtains', 'dandelions', 'an adult eating a sweet treat alone', 'leaves lit only by artificial light', 'pigeons', 'American Girl Doll', 'historical plaques', 'spiral staircases', 'Taylor Swift', 'Chappell Roan', 'Lost','rainbow sprinkles', 'dogs<br><span id="whisper">(in clothes 3pts)</span>', 'the number 3', 'the name Annie', 'Powerpuff Girls', 'cemeteries', 'someone making art', 'someone carrying something out of place or cumbersome', 'bench with a plaque<br><span id="whisper">(must read)</span>', 'anything birthday related', 'psychics', 'art on the ground', 'libraries', 'museums']
 var myPts1 = []
-const things5 = ['pet a dog', "learn a dog's name", 'spot a location from a movie or tv show (not a planned stop)', 'Oaf look-alike', 'someone pretending to be a statue']
+const things5 = ['pet a dog', "learn a dog's name", 'a location from a movie or tv show<br><span id="whisper">(not a planned stop)</span>', 'Oaf look-alike', 'someone pretending to be a statue']
 var myPts5 = []
 const ul1 = document.getElementById("pt1")
 const ul5 = document.getElementById("pt5")
@@ -62,7 +62,7 @@ function addListItem(item, list, pointsList, contentList, pointValue){
 	// put buttons, count, text in list item
 	li.appendChild(minus)
 	//the count for each item has id: index_number+"count"+point_value
-	li.innerHTML += " <span id='"+index+"count"+pointValue+"' class='count'>"+pointsList[index]+"</span> "+item+" "
+	li.innerHTML += " <span id='"+index+"count"+pointValue+"' class='count'>"+pointsList[index]+"</span> <div class='findMe'>"+item+"</div> "
 	li.appendChild(plus)
 
 
