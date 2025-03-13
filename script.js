@@ -108,3 +108,7 @@ function writeList(){
 
 }
 
+//hopefully stop double click zoom
+document.addEventListener("dblclick", function(event) {
+  event.preventDefault();
+}, { passive: false });
