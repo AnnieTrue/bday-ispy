@@ -18,11 +18,12 @@ body{
 }
 /*Fixed background in the body didn't work for moble. trying this*/
 .bg {
+
   position: fixed;
-  top: 0;
+  top: -20vh;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background-image: url("images/cakes.png");
   background-repeat:repeat;
   z-index: -1; /* Make sure the background stays behind other content */
