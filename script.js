@@ -51,8 +51,8 @@ if (!localStorage["myPts"+data['value'][ONE]] || !localStorage["myPts"+data['val
 		//display the points at the right thing and sum up for the total
 		var i = 0
 		data['points'][lvl].forEach(function(count){
-			console.log("looking for id:" + i+"count"+data['value'][lvl])
-			console.log("FOUND: " + document.getElementById(i+"count"+data['value'][lvl]))
+			// console.log("looking for id:" + i+"count"+data['value'][lvl])
+			// console.log("FOUND: " + document.getElementById(i+"count"+data['value'][lvl]))
 			document.getElementById(i+"count"+data['value'][lvl]).textContent = count
 			total_points = total_points + count
 			i = i + 1
