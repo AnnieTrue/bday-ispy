@@ -59,6 +59,7 @@ if (!localStorage["myPts"+data['value'][ONE]] || !localStorage["myPts"+data['val
 		})
 		
 	})
+  	pointsDisplay.textContent = total_points
 	pointsDisplay.textContent = total_points
 }
 
