@@ -49,14 +49,14 @@ if (!localStorage["myPts"+data['value'][ONE]] || !localStorage["myPts"+data['val
 		console.log("FROM STORAGE"+data['value'][lvl]+": " + data['points'][lvl])
 
 		//display the points at the right thing and sum up for the total
-		var i = 0
-		data['points'][lvl].forEach(function(count){
+		for (var i = 0; i < data['points'][lvl].length; i++){
+			var count = data['points'][lvl][i]
+			// console.log("COUNT:" + count)
 			// console.log("looking for id:" + i+"count"+data['value'][lvl])
 			// console.log("FOUND: " + document.getElementById(i+"count"+data['value'][lvl]))
 			document.getElementById(i+"count"+data['value'][lvl]).textContent = count
 			total_points = total_points + count
-			i = i + 1
-		})
+		}
 		
 	})
   	pointsDisplay.textContent = total_points
@@ -121,7 +121,7 @@ function addListItem(item, lvl){
   		total_points = total_points - data['value'][lvl]
   		pointsDisplay.textContent = total_points
 
-  		console.log("- "+data['points'][lvl])
+  		// console.log("- "+data['points'][lvl])
 
   		//save points
   		localStorage["myPts"+data['value'][lvl]] = JSON.stringify(data['points'][lvl])
@@ -133,7 +133,7 @@ function addListItem(item, lvl){
   		total_points = total_points + data['value'][lvl]
   		pointsDisplay.textContent = total_points
 
-  		console.log("+ "+data['points'][lvl])
+  		// console.log("+ "+data['points'][lvl])
 
   		//save points
   		localStorage["myPts"+data['value'][lvl]] = JSON.stringify(data['points'][lvl])
