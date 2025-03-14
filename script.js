@@ -115,7 +115,7 @@ function addListItem(item, lvl){
   	minus.addEventListener('click', function() {
 		// alert("MINUS")
 		data['points'][lvl][index] = data['points'][lvl][index] - data['value'][lvl]
-  		document.getElementById(index+"count"+lvl).textContent = data['points'][lvl][index]
+  		document.getElementById(index+"count"+data['value'][lvl]).textContent = data['points'][lvl][index]
   		// console.log(pointsList)
   		total_points = total_points - data['value'][lvl]
   		pointsDisplay.textContent = total_points
