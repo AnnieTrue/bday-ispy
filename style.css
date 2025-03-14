@@ -121,13 +121,13 @@ ul{
 	gap:5vh;
 }
 li{
-	margin-left: -5vw;
+	margin-left: -12vw;
 	display: flex;
 	background-color: rgba(255, 38, 97, .35);
 	border-radius: 5pt;
 	padding: 2vw;
 	width:100%;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 	align-items: center;
 	gap:2vw;
 	text-align: left;
@@ -140,9 +140,11 @@ button{
 	border: none;
 	border-radius: 3pt;
 	color: #FF63A2;
-	padding-bottom: 10vw; /*?????????/*/
+	text-align: center;
+	padding-left: -5vw;
+	padding-bottom: 15vw; /*?????????/*/
 /*	color: #FF2661;*/
-	font-size: 7vw;
+	font-size: 10vw;
 	box-shadow: -1vw 1vw 0vw #FB8D64;
 	font-family: "Lexend", sans-serif;
 font-optical-sizing: auto;
